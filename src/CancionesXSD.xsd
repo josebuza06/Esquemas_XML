@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Canciones" type="CancionesType"/>
+  <xs:complexType name="CompositorType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="Nombres">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Pharrell"/>
+            <xs:enumeration value="Jason "/>
+            <xs:enumeration value="Andre R."/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Apellidos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Williams"/>
+            <xs:enumeration value="Mraz"/>
+            <xs:enumeration value=" Young"/>
+            <xs:enumeration value="Curtis"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="CompositoresType">
+    <xs:sequence>
+      <xs:element type="CompositorType" name="Compositor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductorType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element name="Nombres">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Pharrell"/>
+            <xs:enumeration value="Martin"/>
+            <xs:enumeration value="Dr."/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Apellidos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Williams"/>
+            <xs:enumeration value="Terefe"/>
+            <xs:enumeration value="Dre"/>
+            <xs:enumeration value="Mike"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="ProductoresType">
+    <xs:sequence>
+      <xs:element type="ProductorType" name="Productor"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancionType">
+    <xs:sequence>
+      <xs:element name="Duracion">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="4:47"/>
+            <xs:enumeration value="4:02"/>
+            <xs:enumeration value="3:13"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Año">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2008"/>
+            <xs:enumeration value="2003"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Titulo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Give it 2 me"/>
+            <xs:enumeration value="I'm Yours"/>
+            <xs:enumeration value="In da club"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="CompositoresType" name="Compositores"/>
+      <xs:element type="ProductoresType" name="Productores"/>
+      <xs:element name="Sello">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Warner Bros. Records"/>
+            <xs:enumeration value="Atlantic Records/ATG"/>
+            <xs:enumeration value="Ahady Records"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Artista">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Madonna"/>
+            <xs:enumeration value="Jason Mraz"/>
+            <xs:enumeration value="50 cent"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancionesType">
+    <xs:sequence>
+      <xs:element type="CancionType" name="Cancion" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

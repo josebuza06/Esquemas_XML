@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Canciones >
+
+<Canciones>
+    <Cancion>
+        <Duracion>4:47</Duracion>
+        <Año>2008</Año>
+        <Titulo>Give it 2 me</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombres>Pharrell</Nombres>
+                <Apellidos>Williams</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombres>Pharrell</Nombres>
+                <Apellidos>Williams</Apellidos>
+            </Productor>
+        </Productores>
+        <Sello>Warner Bros. Records</Sello>
+        <Artista>Madonna</Artista>
+    </Cancion>
+    <Cancion>
+        <Duracion>4:02</Duracion>
+        <Año>2008</Año>
+        <Titulo>I'm Yours</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombres>Jason </Nombres>
+                <Apellidos>Mraz</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombres>Martin</Nombres>
+                <Apellidos>Terefe</Apellidos>
+            </Productor>
+        </Productores>
+        <Sello>Atlantic Records/ATG</Sello>
+        <Artista>Jason Mraz</Artista>
+    </Cancion>
+    <Cancion>
+        <Duracion>3:13</Duracion>
+        <Año>2003</Año>
+        <Titulo>In da club</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombres>Andre R.</Nombres>
+                <Apellidos> Young</Apellidos>
+                <Nombres>Curtis</Nombres>
+                <Apellidos>Jackson</Apellidos>
+                <Nombres>Mike</Nombres>
+                <Apellidos>Elizondo</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombres>Dr.</Nombres>
+                <Apellidos>Dre</Apellidos>
+                <Nombres>Mike</Nombres>
+                <Apellidos>Elizondo</Apellidos>
+            </Productor>
+        </Productores>
+        <Sello>Ahady Records</Sello>
+        <Artista>50 cent</Artista>
+    </Cancion>
+</Canciones>
